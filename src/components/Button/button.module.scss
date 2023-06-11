@@ -1,0 +1,11 @@
+@import "@/styles/_variables.scss";
+
+.button_wrapper{
+    padding: 10px 30px;
+    margin: 0;
+    border: none;
+    background: linear-gradient(114deg,$lightGreen,$green);
+    cursor: pointer;
+
+    
+}

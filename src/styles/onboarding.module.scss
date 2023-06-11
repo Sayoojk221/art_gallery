@@ -1,0 +1,14 @@
+
+@import "@/styles/_variables.scss";
+
+.onboarding_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2;
+    .get_start_container{
+        width: 300px;
+        height: 400px;
+        background-color: $white;
+        box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+    }
+}
