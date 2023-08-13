@@ -1,7 +1,7 @@
 import '../styles/globals.scss'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Art Gallery',
@@ -11,7 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      
+      <body>
         {/* redux configuration */}
         {/* all other configurations*/}
         {children}</body>

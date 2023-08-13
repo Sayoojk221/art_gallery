@@ -1,16 +1,22 @@
-import React from 'react'
-import {clsx} from 'clsx'
+import React from "react";
+import { clsx } from "clsx";
+import { Button as BaseButton, StyledEngineProvider } from "@mui/material";
 
 //assets
-import styles from "./button.module.scss"
+import styles from "./button.module.scss";
 
-const Button = ({ variant='outline', leftIcon, rightIcon, className,label }) => {
-  
+const Button = ({ variant = "outline", className, children, ...props }) => {
   return (
-    <button className={clsx(styles.button_wrapper, styles[variant])}>
-      {label}
-    </button>
-  )
-}
+    <StyledEngineProvider injectFirst>
+      <BaseButton
+        variant={variant}
+        className={clsx(styles.button_wrapper, className)}
+        {...props}
+      >
+        {children}
+      </BaseButton>
+    </StyledEngineProvider>
+  );
+};
 
-export default Button
+export default Button;

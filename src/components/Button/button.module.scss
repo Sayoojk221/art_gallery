@@ -1,11 +1,16 @@
 @import "@/styles/_variables.scss";
+@import "@/styles/_common.scss";
 
-.button_wrapper{
-    padding: 10px 30px;
-    margin: 0;
-    border: none;
-    background: linear-gradient(114deg,$lightGreen,$green);
-    cursor: pointer;
+.button_wrapper {
+  margin: 0;
+  border: none;
+  background: linear-gradient(114deg, $lightGreen, $green);
+  cursor: pointer;
+  @include font-properties($font-size-sm,400, 17px, $black);
 
-    
+  text-transform: none;
+}
+.MuiButtonBase-root-MuiButton-root {
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  padding: 0px;
 }
